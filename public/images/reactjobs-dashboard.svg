@@ -1,0 +1,93 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0f1b2e; }
+    .sidebar { fill: #1a2847; }
+    .card { fill: #1a2847; opacity: 0.5; }
+    .header-text { font-family: Arial, sans-serif; font-size: 20px; fill: #e0e0e0; font-weight: bold; }
+    .label-text { font-family: Arial, sans-serif; font-size: 9px; fill: #808080; font-weight: bold; }
+    .title-text { font-family: Arial, sans-serif; font-size: 11px; fill: #e0e0e0; font-weight: bold; }
+    .meta-text { font-family: Arial, sans-serif; font-size: 8px; fill: #808080; }
+    .value-text { font-family: Arial, sans-serif; font-size: 10px; fill: #22d3ee; }
+    .border-line { stroke: #2a3d5f; stroke-width: 0.5; fill: none; }
+  </style>
+  
+  <!-- Main background -->
+  <rect width="600" height="400" class="bg"/>
+  
+  <!-- Sidebar -->
+  <rect width="80" height="400" class="sidebar"/>
+  
+  <!-- Sidebar branding -->
+  <text x="8" y="28" class="value-text" font-weight="bold" font-size="12">REACT</text>
+  <text x="48" y="28" class="header-text" font-size="12">JOBS</text>
+  
+  <!-- Menu item highlight -->
+  <rect x="8" y="38" width="64" height="18" rx="3" fill="#22d3ee" opacity="0.2"/>
+  <text x="12" y="49" class="value-text" font-size="8">Job Board</text>
+  
+  <!-- Other menu items -->
+  <text x="12" y="68" class="meta-text" font-size="7">Events</text>
+  <text x="12" y="83" class="meta-text" font-size="7">Companies</text>
+  <text x="12" y="98" class="meta-text" font-size="7">Locations</text>
+  
+  <!-- Main content area -->
+  <text x="100" y="28" class="header-text">Job Board</text>
+  
+  <!-- Search bar -->
+  <rect x="100" y="38" width="260" height="22" rx="4" fill="#1a2847"/>
+  <text x="110" y="53" class="meta-text">🔍 Search...</text>
+  
+  <!-- Filter buttons -->
+  <rect x="370" y="40" width="45" height="16" rx="3" fill="#2a3d5f"/>
+  <text x="378" y="50" class="meta-text">Filter</text>
+  
+  <rect x="425" y="40" width="40" height="16" rx="3" fill="#2a3d5f"/>
+  <text x="432" y="50" class="meta-text">By</text>
+  
+  <!-- Table header -->
+  <line x1="100" y1="65" x2="590" y2="65" class="border-line"/>
+  <text x="105" y="76" class="label-text">Title</text>
+  <text x="240" y="76" class="label-text">Company</text>
+  <text x="380" y="76" class="label-text">Location</text>
+  <text x="500" y="76" class="label-text">Salary</text>
+  
+  <!-- Job row 1 -->
+  <rect x="100" y="82" width="490" height="32" class="card"/>
+  <text x="105" y="95" class="title-text">React Developer</text>
+  <text x="105" y="107" class="meta-text">14 min ago</text>
+  <text x="240" y="100" class="title-text">React</text>
+  <text x="380" y="100" class="title-text">Washington</text>
+  <text x="500" y="100" class="value-text">$295K</text>
+  
+  <!-- Job row 2 -->
+  <rect x="100" y="120" width="490" height="32" class="card"/>
+  <text x="105" y="133" class="title-text">Frontend Engineer</text>
+  <text x="105" y="145" class="meta-text">5 min ago</text>
+  <text x="240" y="138" class="title-text">Acas</text>
+  <text x="380" y="138" class="title-text">Remote</text>
+  <text x="500" y="138" class="value-text">$180K</text>
+  
+  <!-- Applications section -->
+  <text x="100" y="175" class="header-text" font-size="14">Applications</text>
+  
+  <!-- App row 1 -->
+  <rect x="100" y="185" width="490" height="28" fill="#1a2847" opacity="0.3"/>
+  <text x="105" y="197" class="title-text">React Developer</text>
+  <text x="240" y="197" class="title-text">React-Ganda</text>
+  <text x="380" y="197" class="title-text">Washington</text>
+  <text x="500" y="197" class="value-text">$2950K</text>
+  
+  <!-- App row 2 -->
+  <rect x="100" y="220" width="490" height="28" fill="#1a2847" opacity="0.3"/>
+  <text x="105" y="232" class="title-text">Frontend Dev</text>
+  <text x="240" y="232" class="title-text">React</text>
+  <text x="380" y="232" class="title-text">Washington</text>
+  <text x="500" y="232" class="value-text">$3000K</text>
+  
+  <!-- Pagination -->
+  <text x="520" y="260" class="meta-text">Showing 1/1</text>
+  
+  <!-- Accent circles -->
+  <circle cx="100" cy="350" r="30" fill="#22d3ee" opacity="0.08"/>
+  <circle cx="560" cy="20" r="40" fill="#22d3ee" opacity="0.05"/>
+</svg>

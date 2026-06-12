@@ -9,29 +9,36 @@ const Contact = () => {
         <div className="contact-flex">
           <div className="contact-box">
             <h4>Connect</h4>
-            <p>
+            <p style={{ margin: '4px 0' }}>
               <a
-                href="https://www.linkedin.com/in/akashrmalhotra/"
+                href="https://www.linkedin.com/in/sachin-singh-4b51a2249"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"
               >
-                LinkedIn — akashrmalhotra
+                LinkedIn — Sachin Singh
               </a>
             </p>
-            <h4>Education</h4>
-            <p>
-              PGPWE (MBA), Indian Institute of Management, Lucknow — 2021–2023
+            <p style={{ margin: '4px 0' }}>
+              <a href="mailto:sachinsingh152004@gmail.com" data-cursor="disable">
+                sachinsingh152004@gmail.com
+              </a>
             </p>
-            <p>
-              B.Tech Computer Science, Manav Rachna Educational Institutions —
-              2009–2013
+            <p style={{ margin: '4px 0', color: '#adacac', fontSize: '15px' }}>
+              +91 8449223163
+            </p>
+            <h4 style={{ marginTop: '20px' }}>Education</h4>
+            <p style={{ margin: '4px 0' }}>
+              B.E. Computer Science & Engineering, Chandigarh University — 2022–Present
+            </p>
+            <p style={{ margin: '4px 0' }}>
+              Intermediate (CBSE Class XII), SAI Public School, Kashipur — 2021–2022
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/akashrmalhotra"
+              href="https://github.com/ssachin15"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -40,7 +47,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/akashrmalhotra/"
+              href="https://www.linkedin.com/in/sachin-singh-4b51a2249"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -49,27 +56,16 @@ const Contact = () => {
               LinkedIn <MdArrowOutward />
             </a>
             <a
-              href="https://www.youtube.com/@Leftbraincoder"
-              target="_blank"
-              rel="noreferrer"
+              href="mailto:sachinsingh152004@gmail.com"
               data-cursor="disable"
               className="contact-social"
             >
-              YouTube <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com/leftbraincoder/"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
+              Email <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Akash Malhotra</span>
+              Designed and Developed <br /> by <span>Sachin Singh</span>
             </h2>
             <h5>
               <MdCopyright /> 2026

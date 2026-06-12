@@ -5,8 +5,8 @@ const Career = () => {
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          My career <span>&</span>
-          <br /> experience
+          My Journey <span>&</span>
+          <br /> Education
         </h2>
         <div className="career-info">
           <div className="career-timeline">
@@ -15,58 +15,49 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>Chandigarh University</h4>
+                <h5>Bachelor of Engineering — CSE</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2022–PRES</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Pursuing a Bachelor of Engineering in Computer Science & Engineering in Chandigarh, India. Focusing on Data Structures & Algorithms, Object-Oriented Programming, System Design, and Full-Stack development.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>Competitive Programming</h4>
+                <h5>LeetCode · Top 20% Globally</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>STREAK</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Solved 100+ problems on LeetCode with an active 6-month streak. Mastery in Hashing, Arrays, Sliding Window, Recursion, and Dynamic Programming with time/space complexity verification on GitHub.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>GeeksforGeeks Certification</h4>
+                <h5>AI Tools Skill Up</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
+              Completed hands-on certification training on generative AI platforms, productivity automation, and practical AI applications in software development workflows.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
+                <h4>SAI Public School</h4>
+                <h5>Intermediate (CBSE Class XII)</h5>
               </div>
-              <h3>2013-16</h3>
+              <h3>2021–22</h3>
             </div>
             <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              Completed high school education in Kashipur, India, establishing solid analytical and logical fundamentals in mathematics and computer science.
             </p>
           </div>
         </div>

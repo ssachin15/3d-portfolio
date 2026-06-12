@@ -5,33 +5,77 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Job Tracker Client",
+    category: "Job application dashboard and tracker",
+    tools: "ReactJS · Vercel · GitHub · Responsive UI",
+    image: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjob-tracker-client-pi.vercel.app%2F?w=1200",
+    link: "https://job-tracker-client-pi.vercel.app/",
+    desc: [
+      "Built to manage and monitor job applications in a clean, searchable dashboard flow.",
+      "Deployed on Vercel for fast access and easy sharing.",
+      "Source code: https://github.com/ssachin15/job-tracker-client"
+    ]
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "REACTJOBS",
+    category: "React jobs board and application interface",
+    tools: "ReactJS · GitHub · Responsive UI",
+    image: "/images/reactjobs-dashboard.svg",
+    link: "https://github.com/ssachin15/REACTJOBS",
+    desc: [
+      "Built as a React-based jobs project for browsing and managing job listings.",
+      "Kept the project accessible through the GitHub repository.",
+      "Features a clean dashboard UI for tracking jobs and applications."
+    ]
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Job Tracker API",
+    category: "Job tracking backend API",
+    tools: "Node.js · Express.js · MongoDB · REST API · GitHub",
+    image: "/images/job-tracker-api.svg",
+    link: "https://github.com/ssachin15/job-tracker-api",
+    desc: [
+      "Built as the backend API for tracking job-related data and workflow actions.",
+      "Source code is available on GitHub for review and reuse.",
+      "RESTful API with GET, POST, PUT, DELETE endpoints for job management."
+    ]
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "E-Commerce REST API",
+    category: "Secure & Layered E-Commerce Backend",
+    tools: "Node.js · Express.js · MongoDB · JWT · Bcrypt.js · Docker · GitHub Actions",
+    image: "/images/ecommerce_api.png",
+    link: "https://github.com/ssachin15/E-COMMERCE",
+    desc: [
+      "Zero unauthorized access incidents by architecting role-based JWT auth & bcrypt hashing.",
+      "Reduced coupling by 40% using route → controller → middleware → model layering.",
+      "Caught 12 edge-case bugs pre-deployment via a 35-case Postman test suite in CI/CD pipeline."
+    ]
   },
+  {
+    title: "Task Manager API",
+    category: "Production-ready Task Management Backend",
+    tools: "Node.js · Express.js · MongoDB · JWT · Docker · GitHub Actions · Render",
+    image: "/images/task_manager.png",
+    link: "https://github.com/ssachin15/task-manager-api",
+    desc: [
+      "Designed User-Task MongoDB schemas with compound indexes, cutting query time from 200ms to 60ms.",
+      "Shipped API to Render with zero-downtime deploys using GitHub Actions CI/CD.",
+      "Stress-tested 20+ concurrent & malformed payload scenarios with zero production failures."
+    ]
+  },
+  {
+    title: "LeetMetric Tracker",
+    category: "LeetCode Progress Tracker & Analytics",
+    tools: "ReactJS · REST APIs · GitHub Pages · Chrome Lighthouse",
+    image: "/images/leetmetric.png",
+    link: "https://ssachin15.github.io/Portfolio",
+    desc: [
+      "Built a public analytics dashboard used by 50+ peers, averaging 30+ sessions/week.",
+      "Cut load time from 4.1s to 1.8s (Lighthouse score: 91/100) via lazy-loading & skeleton screens.",
+      "Gracefully handled all API timeouts and invalid input states with zero application crashes."
+    ]
+  }
 ];
 
 const Work = () => {
@@ -110,6 +154,16 @@ const Work = () => {
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.desc && (
+                          <div className="carousel-desc" style={{ marginTop: '12px' }}>
+                            <span className="tools-label" style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '400', opacity: 0.6, textTransform: 'uppercase', letterSpacing: '1px' }}>Impact & Features</span>
+                            <ul style={{ paddingLeft: '16px', margin: 0, color: '#adacac', fontWeight: 200, fontSize: '14px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                              {project.desc.map((bullet, idx) => (
+                                <li key={idx} style={{ lineHeight: '1.4' }}>{bullet}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
