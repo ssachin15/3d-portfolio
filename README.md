@@ -1,88 +1,49 @@
-# 3D Interactive Portfolio
+# 3D Portfolio
 
-A modern, fully responsive 3D portfolio website built with React, TypeScript, Three.js, and GSAP. Features an animated 3D character scene, interactive UI, smooth scroll animations, and a showcase of real projects with dashboard mockups.
+A modern, interactive 3D portfolio website showcasing projects and skills with smooth animations and engaging visuals.
 
-**Live Site**: [Deploy with Vercel](https://vercel.com/new/clone?repository-url=https://github.com/ssachin15/3d-portfolio)
-
-![Portfolio Preview](public/images/preview1.png)
+**Live Site**: [Deploy with Vercel](#deployment)
 
 ---
 
-## ✨ Features
+## 🎯 Features
 
-### 🎨 Frontend Experience
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop
-- **3D Character Scene**: Interactive animated 3D model with head-tracking animations
-- **Smooth Scroll Animations**: GSAP-powered scroll transitions and staggered reveals
-- **Custom Cursor**: Fully customizable cursor with interactive states
-- **Dark Modern UI**: Clean, professional dark theme with cyan accents
-
-### 📊 Project Showcase
-- **Interactive Carousel**: Browse through portfolio projects with arrow navigation
-- **Live Dashboard Mockups**: Generated SVG dashboards for:
-  - **React Jobs Board** - Job listing and tracking interface
-  - **Job Tracker API** - RESTful API backend visualization
-- **Project Details**: Each project includes:
-  - Title, category, and tech stack
-  - Impact highlights and key features
-  - Direct links to GitHub repositories
-  - Live previews and deployment status
-
-### ⚡ Performance
-- **Lazy Loading**: Components load on demand
-- **Optimized Builds**: Production-ready Vite build pipeline
-- **Analytics Ready**: Vercel Analytics integration
+- Interactive 3D character model on landing page
+- Responsive portfolio layout
+- Project showcase carousel with live links
+- Smooth scroll animations
+- Dark modern design
+- Custom cursor interactions
 
 ---
 
 ## 🛠 Tech Stack
 
-| Layer | Technologies |
-|-------|--------------|
-| **Frontend** | React 18, TypeScript, Vite |
-| **Styling** | CSS3 with CSS Variables |
-| **3D Graphics** | Three.js, React Three Fiber, Drei, Postprocessing |
-| **Animations** | GSAP 3, ScrollTrigger, ScrollTo |
-| **UI Libraries** | React Icons, React Fast Marquee |
-| **Analytics** | Vercel Analytics |
-| **Build & Deploy** | Vite, Vercel |
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Three.js** - 3D graphics
+- **GSAP** - Animations
+- **Vite** - Build tool
+- **CSS3** - Styling
 
 ---
 
 ## 📁 Project Structure
 
 ```
-3d-portfolio/
-├── public/
-│   ├── images/                    # Logos, previews, dashboard mockups
-│   ├── models/                    # 3D model files (encrypted)
-│   └── draco/                     # DRACO decoder for model compression
-├── src/
-│   ├── assets/                    # SVG icons and local assets
-│   ├── components/
-│   │   ├── Character/             # 3D scene & character utilities
-│   │   │   ├── Scene.tsx          # Three.js setup & rendering
-│   │   │   ├── utils/             # Animation, lighting, mouse tracking
-│   │   │   └── exports.ts
-│   │   ├── styles/                # Component-scoped CSS modules
-│   │   ├── About.tsx              # About section
-│   │   ├── Career.tsx             # Career/experience section
-│   │   ├── Contact.tsx            # Contact/footer section
-│   │   ├── Landing.tsx            # Hero section with 3D model
-│   │   ├── Navbar.tsx             # Navigation header
-│   │   ├── Work.tsx               # Project carousel
-│   │   ├── WorkImage.tsx          # Project image/video component
-│   │   └── [other sections]
-│   ├── context/                   # React Context (LoadingProvider)
-│   ├── data/                      # Static content & configuration
-│   ├── types/                     # TypeScript type definitions
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css                  # Global styles
-├── package.json
-├── vite.config.ts
-├── tsconfig.json
-└── README.md
+src/
+├── components/          # React components
+│   ├── Character/       # 3D model & scene
+│   ├── About.tsx
+│   ├── Career.tsx
+│   ├── Contact.tsx
+│   ├── Landing.tsx
+│   ├── Navbar.tsx
+│   ├── Work.tsx         # Projects carousel
+│   └── styles/          # Component styles
+├── context/             # Global state
+├── data/                # Content
+└── App.tsx
 ```
 
 ---
@@ -90,29 +51,26 @@ A modern, fully responsive 3D portfolio website built with React, TypeScript, Th
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js** 18+ (or 20+)
-- **npm** 9+ or **yarn**
+- Node.js 18+
+- npm or yarn
 
 ### Installation
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/ssachin15/3d-portfolio.git
-   cd 3d-portfolio
-   ```
+```bash
+git clone https://github.com/ssachin15/3d-portfolio.git
+cd 3d-portfolio
+npm install
+```
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Development
 
-3. **Start development server**:
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:5173](http://localhost:5173) in your browser.
+```bash
+npm run dev
+```
 
-### Building for Production
+Open [http://localhost:5173](http://localhost:5173)
+
+### Build
 
 ```bash
 npm run build
@@ -121,174 +79,42 @@ npm run preview
 
 ---
 
-## 📜 Available Scripts
+## 📦 Available Scripts
 
-| Command | Purpose |
-|---------|---------|
-| `npm run dev` | Start Vite dev server with HMR |
-| `npm run build` | Build optimized production bundle |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint on all files |
-
----
-
-## 🎯 Key Components
-
-### Landing Section (`Landing.tsx`)
-- Hero section with animated text
-- 3D character model positioned on the right
-- Smooth scroll trigger animations
-- Responsive layout for all screen sizes
-
-### Work/Projects Carousel (`Work.tsx`)
-- Interactive carousel with 6+ projects
-- Dashboard mockups for React Jobs and API
-- Project details with impact metrics
-- Direct GitHub and live links
-
-### Character 3D Scene (`Character/Scene.tsx`)
-- Three.js scene setup with WebGL renderer
-- GLTF/GLB model loading with animations
-- Mouse-tracking head rotation
-- Lighting system with environment HDR mapping
-- Resize handling for responsive canvas
-
-### Navigation & UI
-- **Navbar**: Sticky header with smooth scroll links
-- **Cursor**: Custom cursor with hover states
-- **Social Icons**: Quick links to GitHub, LinkedIn, etc.
-- **Loading**: Page load progress indicator
-
----
-
-## 🎨 Customization
-
-### Edit Project Data
-Update [src/components/Work.tsx](src/components/Work.tsx) to modify:
-- Project titles, descriptions, and categories
-- Tech stack and tools
-- Project URLs and images
-- Impact/feature highlights
-
-### Modify Colors & Themes
-CSS variables in [src/index.css](src/index.css):
-```css
-:root {
-  --accentColor: #5eead4;      /* Cyan accent */
-  --backgroundColor: #0a0e17;  /* Dark bg */
-  --vh: 100svh;                /* Viewport height */
-}
-```
-
-### Update 3D Character
-- Replace model file in [public/models/](public/models/)
-- Modify animations in [src/components/Character/utils/animationUtils.ts](src/components/Character/utils/animationUtils.ts)
-- Adjust lighting in [src/components/Character/utils/lighting.ts](src/components/Character/utils/lighting.ts)
-
-### Edit Dashboard Images
-SVG dashboards are located in [public/images/](public/images/):
-- `reactjobs-dashboard.svg` - React Jobs board mockup
-- `job-tracker-api.svg` - Backend API visualization
+- `npm run dev` - Start dev server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
 ---
 
 ## 🌐 Deployment
 
-### Deploy to Vercel (Recommended)
+### Deploy to Vercel
 
-1. **Push to GitHub**:
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
+1. Push code to GitHub
+2. Go to [vercel.com](https://vercel.com/new)
+3. Import your GitHub repository
+4. Click "Deploy"
 
-2. **Go to [vercel.com](https://vercel.com)**:
-   - Click "New Project"
-   - Import your GitHub repository
-   - Vercel auto-detects Vite
-   - Click "Deploy"
-
-3. **Auto-Deploy**: Future pushes to `main` trigger automatic redeployment
-
-### Alternative: Netlify or GitHub Pages
-- **Netlify**: Connect your repo at [netlify.com](https://netlify.com)
-- **GitHub Pages**: Set build command to `npm run build` and publish from `dist/`
-
----
-
-## 📦 Dependencies
-
-### Core
-- `react` - UI library
-- `typescript` - Type safety
-- `vite` - Build tool
-
-### 3D & Animation
-- `three` - 3D graphics
-- `@react-three/fiber` - React renderer for Three.js
-- `@react-three/drei` - Useful helpers and components
-- `gsap` - Animation library
-- `@gsap/react` - GSAP React integration
-
-### UI
-- `react-icons` - Icon library
-- `react-fast-marquee` - Scrolling text component
-
-### Analytics
-- `@vercel/analytics` - Deployment analytics
-
----
-
-## 🐛 Troubleshooting
-
-### 3D Model Not Loading
-- Check browser console for errors
-- Verify DRACO decoder files in `public/draco/`
-- Ensure model file path is correct in `Character/utils/character.ts`
-
-### Animations Not Playing
-- Verify GSAP is properly installed: `npm ls gsap`
-- Check ScrollTrigger initialization in `MainContainer.tsx`
-- Ensure CSS is being applied from `styles/` folder
-
-### Build Errors
-- Clear cache: `rm -rf node_modules dist` (or `rmdir /s node_modules dist` on Windows)
-- Reinstall: `npm install`
-- Run lint: `npm run lint` to check for TypeScript errors
-
-### Performance Issues
-- Check bundle size: `npm run build` output
-- Disable heavy animations on mobile in `isDesktopView` check
-- Consider lazy-loading TechStack component
+Auto-deploys on every push to main branch.
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the **MIT License**. Feel free to fork, modify, and use as a template for your own portfolio!
+MIT License - Feel free to use this as a template!
 
 ---
 
 ## 🔗 Links
 
 - **GitHub**: [ssachin15/3d-portfolio](https://github.com/ssachin15/3d-portfolio)
-- **Portfolio**: [Deploy to Vercel](#-deployment)
-- **My Work**: Check out the projects in the portfolio!
+- **Portfolio**: [Live Site](https://vercel.com)
 
 ---
 
-## 🙏 Credits
-
-- Built with **React**, **Three.js**, and **GSAP**
-- Inspired by modern portfolio designs
-- Dashboard mockups created with SVG
-
----
-
-## 💬 Questions or Suggestions?
-
-Feel free to open an issue or reach out on GitHub. Happy coding! 🚀
+Built with ❤️ using React & Three.js
    ```
 
 3. Start the local development server:
